@@ -4,7 +4,6 @@ import ContactUs from "../Components/ContactUs";
 import PageHeader from "../Components/PageHeader";
 import Photos from "../Components/Photos";
 import Up from "../Images/Up Angle.png";
-import User from "../Images/User.png";
 import Down from "../Images/Down Angle.png";
 import Hero from "../Images/Hero.jpeg";
 import Rakesh from "../Images/Rakesh Kohli.png";

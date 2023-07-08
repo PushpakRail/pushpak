@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import * as ROUTES from "../Constants/routes";
-
+import { handleScroll } from "../Helper/Scroll";
 
 const Container = styled.section`
   padding: 0;
@@ -18,7 +18,7 @@ const NavSectionMob = styled.section`
 `;
 const NavSectionDesk = styled.section`
   display: none;
- 
+
   justify-content: space-between;
   align-items: center;
   text-align: center;
@@ -100,6 +100,7 @@ const MenuList = styled.div`
   transition: linear 0.4s;
   position: absolute;
   width: 100%;
+  z-index: 1;
 
   &.open {
     transform: translateY(0);
@@ -117,16 +118,31 @@ const NavBar = () => {
           <box-icon name="menu-alt-right"></box-icon>
         </Menu>
         <MenuList className={toggle ? "open" : null}>
-          <NavItems onClick={() => setToggle(!toggle)} href="#">
+          <NavItems
+            onClick={() => {
+              setToggle(!toggle);
+              navigate(ROUTES.HOMEPAGE);
+            }}
+          >
             Home
           </NavItems>
-          <NavItems onClick={() => setToggle(!toggle)} href="#1">
+          <NavItems
+            onClick={() => {
+              setToggle(!toggle);
+              navigate(ROUTES.ABOUTPAGE);
+            }}
+          >
             About Us
           </NavItems>
-          <NavItems onClick={() => setToggle(!toggle)} href="#2">
+          <NavItems
+            onClick={() => {
+              setToggle(!toggle);
+              navigate(ROUTES.OUTLETPAGE);
+            }}
+          >
             Outlet
           </NavItems>
-          <NavItems onClick={() => setToggle(!toggle)} href="#3">
+          <NavItems onClick={() => {setToggle(!toggle); handleScroll()}} >
             Contact Us
           </NavItems>
         </MenuList>
@@ -136,16 +152,20 @@ const NavBar = () => {
           <NavItems onClick={() => navigate(ROUTES.HOMEPAGE)}>Home</NavItems>
         </div>
         <div>
-          <NavItems onClick={() => navigate(ROUTES.ABOUTPAGE)}>About Us</NavItems>
+          <NavItems onClick={() => navigate(ROUTES.ABOUTPAGE)}>
+            About Us
+          </NavItems>
         </div>
         <div>
           <Name>FABRICATED</Name>
         </div>
         <div>
-          <NavItems onClick={() => navigate(ROUTES.OUTLETPAGE)}>Outlet</NavItems>
+          <NavItems onClick={() => navigate(ROUTES.OUTLETPAGE)}>
+            Outlet
+          </NavItems>
         </div>
         <div>
-          <NavItems href="#4">Contact Us</NavItems>
+          <NavItems onClick={handleScroll}>Contact Us</NavItems>
         </div>
       </NavSectionDesk>
     </Container>

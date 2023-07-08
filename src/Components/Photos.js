@@ -17,12 +17,6 @@ const Images = styled.img`
   max-height: 90vh;
 `;
 
-const HeightImg = styled.img`
-  aspect-ratio: 2\3;
-  height: 250px;
-  margin: 10px 10px 5px 0;
-`;
-
 const PhotoInfo = styled.div`
   background-color: #fff;
   padding: 10px 10px;
@@ -44,7 +38,7 @@ const PhotoInfo = styled.div`
   &:before {
     content: "";
     position: absolute;
-    width: 200px;
+    width: 250px;
     height: 1px;
     bottom: 50%;
     right: -200px;

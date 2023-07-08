@@ -5,9 +5,7 @@ import Glare from "../Components/Glare";
 import Photos from "../Components/Photos";
 import Contact from "../Components/ContactUs";
 import Hero from "../Images/Hero.jpeg";
-import Human from "../Images/Human.png";
 import Search from "../Images/Search.png";
-import Image from "../Images/Image1.png";
 import P1 from "../Images/P1.png";
 import P2 from "../Images/P2.png";
 import P3 from "../Images/P3.png";
@@ -205,7 +203,18 @@ const Home = () => {
                 </ServiceInfo>
               </ServiceDetail>
             </Service>
-            {/* <DottedLine big /> */}
+            <Service line>
+              <Icon src={Search} />
+              <ServiceDetail>
+                <ServiceName>CNC Plasma Cutting</ServiceName>
+                <ServiceInfo>
+                  We utilize advanced CNC plasma cutting technology to achieve
+                  precise and intricate steel component cutting based on your
+                  specifications. This enables us to create complex shapes and
+                  designs with ease, ensuring high-quality results.
+                </ServiceInfo>
+              </ServiceDetail>
+            </Service>
             <Service mobile>
               <Icon src={Search} />
               <ServiceDetail>
@@ -227,19 +236,6 @@ const Home = () => {
             <Service line>
               <Icon src={Search} />
               <ServiceDetail>
-                <ServiceName>CNC Plasma Cutting</ServiceName>
-                <ServiceInfo>
-                  We utilize advanced CNC plasma cutting technology to achieve
-                  precise and intricate steel component cutting based on your
-                  specifications. This enables us to create complex shapes and
-                  designs with ease, ensuring high-quality results.
-                </ServiceInfo>
-              </ServiceDetail>
-            </Service>
-            {/* <DottedLine /> */}
-            <Service line>
-              <Icon src={Search} />
-              <ServiceDetail>
                 <ServiceName>Structural Steel Fabrication</ServiceName>
                 <ServiceInfo>
                   Our workshop is fully equipped to handle structural steel
@@ -249,7 +245,30 @@ const Home = () => {
                 </ServiceInfo>
               </ServiceDetail>
             </Service>
-            {/* <DottedLine /> */}
+            <Service line>
+              <Icon src={Search} />
+              <ServiceDetail>
+                <ServiceName>Micro-Tunneling</ServiceName>
+                <ServiceInfo>
+                  Micro-tunneling is a precise and efficient method for
+                  underground pipeline installation, providing a cost-effective
+                  and less intrusive alternative to traditional excavation
+                  methods. We have gained a lot of experience in the process of
+                  micro-tunneling which helps us fulfill our customer
+                  requirements on time and with perfection.
+                </ServiceInfo>
+              </ServiceDetail>
+            </Service>
+            <Service line>
+              <Icon src={Search} />
+              <ServiceDetail>
+                <ServiceName>Swimming pools</ServiceName>
+                <ServiceInfo>
+                  We have construction of Olympic level swimming pool, machine
+                  room, changing room, & toilet blocks, etc.
+                </ServiceInfo>
+              </ServiceDetail>
+            </Service>
             <Service>
               <Icon src={Search} />
               <ServiceDetail>
