@@ -30,11 +30,11 @@ const Info = styled.section`
 const InfoDiv = styled.div`
   background: #fff;
   max-width: 900px;
-  padding: 40px 40px 40px 20px;
   @media ${(props) => props.theme.MediaQueries.l.query} {
     position: absolute;
     top: 105px;
     left: 0;
+  padding: 40px 40px 40px 20px;
   }
 `;
 
@@ -45,7 +45,7 @@ const HeadingDiv = styled.div`
   font-weight: 700;
   position: relative;
   padding-left: 35px;
-  width: ${(props) => (props.fac ? "600px" : "700px")};
+  max-width: ${(props) => (props.fac ? "600px" : "700px")};
   margin-bottom: 40px;
   line-height: 55px;
 
