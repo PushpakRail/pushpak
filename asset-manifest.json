@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.410706f6.js",
+    "main.js": "/static/js/main.6d9585d1.js",
     "static/media/Hero.jpeg": "/static/media/Hero.8fb6188fac132e5c920a.jpeg",
     "static/media/P6.png": "/static/media/P6.fc31fb4ab90a5b79e75f.png",
     "static/media/Equip4.png": "/static/media/Equip4.df64b44d559dbc0e5043.png",
@@ -25,6 +25,6 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/js/main.410706f6.js"
+    "static/js/main.6d9585d1.js"
   ]
 }
