@@ -231,11 +231,11 @@ const Info = styled.p`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 76px;
+  width: 80px;
 
   @media ${(props) => props.theme.MediaQueries.m.query} {
     font-size: 20px;
-    width: 155px;
+    width: 175px;
   }
 `;
 
@@ -269,7 +269,7 @@ const ContactUs = () => {
       <ContactBack src={ContactMap} />
       <ContactBack src={ContactBg} />
       <ContactDiv>
-      <ContactHead>Contact Us</ContactHead>
+        <ContactHead>Contact Us</ContactHead>
         <ContactUsSec>
           <ContactInfo
             href="https://www.linkedin.com/company/pushpak-rail-construction-prv-ltd/"
@@ -281,22 +281,22 @@ const ContactUs = () => {
             <Contact>linkedin</Contact>
             <Info>@pushpak-rail-construction-prv-ltd</Info>
           </ContactInfo>
-          <ContactInfo href="tel:+919224644101" target="_blank">
+          <ContactInfo href="tel:+919322030718" target="_blank">
             <Logo>
               <box-icon name="phone"></box-icon>
             </Logo>
             <Contact>Phone</Contact>
-            <Info>+91 92246 44101</Info>
+            <Info>+91 93220 30718</Info>
           </ContactInfo>
           <ContactInfo
-            href="https://api.whatsapp.com/send?phone=919224644101"
+            href="https://api.whatsapp.com/send?phone=919322030718"
             target="_blank"
           >
             <Logo>
               <box-icon type="logo" name="whatsapp"></box-icon>
             </Logo>
             <Contact>WhatsApp</Contact>
-            <Info>+91 92246 44101</Info>
+            <Info>+91 93220 30718</Info>
           </ContactInfo>
         </ContactUsSec>
       </ContactDiv>

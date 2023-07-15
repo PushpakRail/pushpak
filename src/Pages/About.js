@@ -5,7 +5,7 @@ import PageHeader from "../Components/PageHeader";
 import Photos from "../Components/Photos";
 import Up from "../Images/Up Angle.png";
 import Down from "../Images/Down Angle.png";
-import Hero from "../Images/Hero.jpeg";
+import AboutImage from "../Images/About.png";
 import Rakesh from "../Images/Rakesh Kohli.png";
 import Navin from "../Images/Navin Vazirani.png";
 import Jhamat from "../Images/Jhamat Hasseja.png";
@@ -140,7 +140,7 @@ function About() {
         <AboutImgDiv>
           <UpAngle src={Up} />
           <DownAngle src={Down} />
-          <AboutImg src={Hero} />
+          <AboutImg src={AboutImage} />
         </AboutImgDiv>
         <AboutInfo>
           <AboutCom>About our Company</AboutCom>

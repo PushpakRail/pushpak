@@ -1,58 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import NavBar from "../Components/NavBar";
-import Glare from "../Components/Glare";
+// import Glare from "../Components/Glare";
 import Photos from "../Components/Photos";
+import ImagePopup from "../Components/ImagePopup";
 import Contact from "../Components/ContactUs";
 import Hero from "../Images/Hero.jpeg";
 import Search from "../Images/Search.png";
+import C1 from "../Images/C1.png";
+import C2 from "../Images/C2.png";
+import C3 from "../Images/C3.png";
+import C4 from "../Images/C4.png";
 import P1 from "../Images/P1.png";
-import P2 from "../Images/P2.png";
+import P2 from "../Images/P2.jpg";
 import P3 from "../Images/P3.png";
-import P4 from "../Images/P4.png";
+import P4 from "../Images/P4.jpg";
 import P5 from "../Images/P5.png";
 import P6 from "../Images/P6.png";
 import P7 from "../Images/P7.png";
+import P8 from "../Images/P8.jpg";
+import P9 from "../Images/P9.jpg";
+import P10 from "../Images/P10.jpg";
+import S1 from "../Images/S1.png";
+import S2 from "../Images/S2.png";
+import S3 from "../Images/S3.png";
+import S4 from "../Images/S4.png";
+import S5 from "../Images/S5.png";
+import S6 from "../Images/S6.png";
+import S7 from "../Images/S7.png";
+import HeroSecOld from "../Components/HeroSecOld";
+import HeroSecNew from "../Components/HeroSecNew";
 
-const HeroSection = styled.section`
-  background-image: url(${Hero});
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: auto;
-  position: relative;
-  color: #fff;
-`;
-
-const HeroContentDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-direction: column;
-  padding: 0 20px;
-`;
-
-const HeroContent = styled.p`
-  font-size: 54px;
-  font-family: ${(props) => props.theme.Fonts.Abril};
-  margin-bottom: 20px;
-  max-width: 500px;
-`;
-
-const HeroBtn = styled.button`
-  border: none;
-  border-radius: 5px;
-  background: #ff5538;
-  color: #fff;
-  font-size: 18px;
-  font-family: ${(props) => props.theme.Fonts.Sans};
-  font-weight: 700;
-  padding: 13px 18px;
+const NavDiv = styled.div`
+  position: absolute;
+  width: 100%;
+  top: 0;
 `;
 
 const Services = styled.section`
@@ -129,7 +113,12 @@ const Icon = styled.img`
   border-radius: 50%;
   padding: 7.5px;
   height: 55px;
+  aspect-ratio: 1/1;
   margin-right: 20px;
+  cursor: pointer;
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    height: 60px;
+  }
 `;
 
 const ServiceDetail = styled.div``;
@@ -147,7 +136,6 @@ const ServiceInfo = styled.p`
   font-size: 18px;
   font-family: ${(props) => props.theme.Fonts.Syne};
   font-weight: 500;
-  text-align: justify;
 `;
 
 const Projects = styled.section`
@@ -173,22 +161,52 @@ const PhotoGallery = styled.div`
 `;
 
 const Home = () => {
+  const [model, setModel] = useState(false);
+  const [image, setImage] = useState(null);
+
   return (
     <>
-      <HeroSection>
+      {model && <ImagePopup model={model} setModel={setModel} Image={image} />}
+
+      <Carousel
+        infiniteLoop={true}
+        showArrows={false}
+        stopOnHover={false}
+        autoPlay={true}
+        showThumbs={false}
+        showStatus={false}
+        showIndicators={false}
+        interval={3000}
+        animationHandler="fade"
+      >
+        <HeroSecOld
+          info={"Construction of Olympic Size Swimming Pool"}
+          img={C1}
+        />
+        <HeroSecOld
+          info={"Fledged Micro Tunneling Machines and Expertise"}
+          img={C2}
+        />
+        <HeroSecOld info={"Affiliated Fabrication Workshop"} img={C3} />
+        <HeroSecNew />
+        <HeroSecOld info={"Pre Fabricated Villas"} img={C4} />
+      </Carousel>
+      <NavDiv>
         <NavBar />
-        <HeroContentDiv>
-          <HeroContent>Building a Strong Future</HeroContent>
-          <HeroBtn>Get a Quote</HeroBtn>
-        </HeroContentDiv>
-      </HeroSection>
-      <Glare />
+      </NavDiv>
+      {/* <Glare /> */}
       <Services>
         <HeadingDiv>Providing Solutions Start to End</HeadingDiv>
         <ParentDiv>
           <ServicesDiv>
             <Service line>
-              <Icon src={Search} />
+              <Icon
+                src={S1}
+                onClick={() => {
+                  setImage(S1);
+                  setModel(true);
+                }}
+              />
               <ServiceDetail>
                 <ServiceName>Custom Steel Fabrication</ServiceName>
                 <ServiceInfo>
@@ -204,7 +222,13 @@ const Home = () => {
               </ServiceDetail>
             </Service>
             <Service line>
-              <Icon src={Search} />
+              <Icon
+                src={S2}
+                onClick={() => {
+                  setImage(S2);
+                  setModel(true);
+                }}
+              />
               <ServiceDetail>
                 <ServiceName>CNC Plasma Cutting</ServiceName>
                 <ServiceInfo>
@@ -216,7 +240,13 @@ const Home = () => {
               </ServiceDetail>
             </Service>
             <Service mobile>
-              <Icon src={Search} />
+              <Icon
+                src={S3}
+                onClick={() => {
+                  setImage(S3);
+                  setModel(true);
+                }}
+              />
               <ServiceDetail>
                 <ServiceName>Welding and Assembly</ServiceName>
                 <ServiceInfo>
@@ -234,7 +264,13 @@ const Home = () => {
           </ServicesDiv>
           <ServicesDiv>
             <Service line>
-              <Icon src={Search} />
+              <Icon
+                src={S4}
+                onClick={() => {
+                  setImage(S4);
+                  setModel(true);
+                }}
+              />
               <ServiceDetail>
                 <ServiceName>Structural Steel Fabrication</ServiceName>
                 <ServiceInfo>
@@ -246,7 +282,13 @@ const Home = () => {
               </ServiceDetail>
             </Service>
             <Service line>
-              <Icon src={Search} />
+              <Icon
+                src={S5}
+                onClick={() => {
+                  setImage(S5);
+                  setModel(true);
+                }}
+              />
               <ServiceDetail>
                 <ServiceName>Micro-Tunneling</ServiceName>
                 <ServiceInfo>
@@ -260,7 +302,13 @@ const Home = () => {
               </ServiceDetail>
             </Service>
             <Service line>
-              <Icon src={Search} />
+              <Icon
+                src={S6}
+                onClick={() => {
+                  setImage(S6);
+                  setModel(true);
+                }}
+              />
               <ServiceDetail>
                 <ServiceName>Swimming pools</ServiceName>
                 <ServiceInfo>
@@ -270,7 +318,13 @@ const Home = () => {
               </ServiceDetail>
             </Service>
             <Service>
-              <Icon src={Search} />
+              <Icon
+                src={S7}
+                onClick={() => {
+                  setImage(S7);
+                  setModel(true);
+                }}
+              />
               <ServiceDetail>
                 <ServiceName>Surface Finishing</ServiceName>
                 <ServiceInfo>
@@ -291,10 +345,21 @@ const Home = () => {
           <Photos img={P1} no="1" name="Thane multi story parking" />
           <Photos img={P2} no="2" name="Lifts & Escalators" />
           <Photos img={P3} no="3" name="Steel Girder" />
-          <Photos img={P4} no="4" name="Raising of PF" />
+          <Photos img={P4} no="4" name="Micro Tunneling Boring Machine" />
           <Photos img={P5} no="5" name="Kalyan - Igatpuri" />
           <Photos img={P6} no="6" name="Chambal bridge" />
           <Photos img={P7} no="7" name="Amalner" />
+          <Photos
+            img={P8}
+            no="8"
+            name="PIT  Line at Railway Mechanical Workshop"
+          />
+          <Photos img={P9} no="9" name="Arch Bridge Rehabilitation" />
+          <Photos
+            img={P10}
+            no="10"
+            name="Bridge construction by Box pushing Technick"
+          />
         </PhotoGallery>
       </Projects>
       <Contact />

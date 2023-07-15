@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import * as ROUTES from "../Constants/routes";
 import { handleScroll } from "../Helper/Scroll";
+import Logo from "../Images/Logo.png"
 
 const Container = styled.section`
   padding: 0;
@@ -18,12 +19,12 @@ const NavSectionMob = styled.section`
 `;
 const NavSectionDesk = styled.section`
   display: none;
-
   justify-content: space-between;
   align-items: center;
   text-align: center;
   max-width: 1200px;
   margin: 0px auto;
+  height: 80px;
 
   div:nth-of-type(1),
   div:nth-of-type(2),
@@ -39,10 +40,9 @@ const NavSectionDesk = styled.section`
   }
 `;
 
-const Name = styled.h1`
-  font-size: 40px;
-  font-weight: 400;
-  font-family: ${(props) => props.theme.Fonts.Syne};
+const Name = styled.img`
+  height: 50px;
+  width: auto;
 `;
 
 const NavItems = styled.a`
@@ -142,7 +142,12 @@ const NavBar = () => {
           >
             Outlet
           </NavItems>
-          <NavItems onClick={() => {setToggle(!toggle); handleScroll()}} >
+          <NavItems
+            onClick={() => {
+              setToggle(!toggle);
+              handleScroll();
+            }}
+          >
             Contact Us
           </NavItems>
         </MenuList>
@@ -157,7 +162,7 @@ const NavBar = () => {
           </NavItems>
         </div>
         <div>
-          <Name>FABRICATED</Name>
+          <Name src={Logo} />
         </div>
         <div>
           <NavItems onClick={() => navigate(ROUTES.OUTLETPAGE)}>

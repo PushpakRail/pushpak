@@ -38,10 +38,10 @@ const PhotoInfo = styled.div`
   &:before {
     content: "";
     position: absolute;
-    width: 250px;
+    width: 300px;
     height: 1px;
     bottom: 50%;
-    right: -200px;
+    right: -300px;
     background-color: #fff;
   }
 `;
@@ -56,6 +56,21 @@ const PhotoName = styled.p`
   color: #000;
   font-size: 18px;
   font-weight: 700;
+  max-width: 260px;
+  max-height: 43px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  @media ${(props) => props.theme.MediaQueries.m.query} {
+    width: 150px;
+  }
+
+  @media ${(props) => props.theme.MediaQueries.l.query} {
+    width: auto;
+    max-width: 260px;
+  }
 `;
 
 const Photos = ({ img, no, name, height }) => {
