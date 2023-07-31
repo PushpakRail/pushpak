@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.85cbf5ff.css",
-    "main.js": "/static/js/main.917ce448.js",
+    "main.js": "/static/js/main.95c63626.js",
     "static/media/S5.png": "/static/media/S5.c46c3199cdfaae44fe4b.png",
     "static/media/Hero.jpeg": "/static/media/Hero.8fb6188fac132e5c920a.jpeg",
     "static/media/About.png": "/static/media/About.59b96f6f91ee18a6c998.png",
@@ -13,11 +13,14 @@
     "static/media/Equip4.png": "/static/media/Equip4.df64b44d559dbc0e5043.png",
     "static/media/ContactBg.png": "/static/media/ContactBg.9312d9640ae1a5902fbc.png",
     "static/media/Back.png": "/static/media/Back.9f71423ca1e57ac9ddc5.png",
+    "static/media/OP3.png": "/static/media/OP3.41c1585ab0af7ebbea41.png",
+    "static/media/OP2.png": "/static/media/OP2.bfd9d3ccc77e1fe15150.png",
     "static/media/S7.png": "/static/media/S7.2714e4f0cdfd6f0393f5.png",
     "static/media/C2.png": "/static/media/C2.25b91de22cd4a2f99bcb.png",
     "static/media/S4.png": "/static/media/S4.94ca45df4a5432e85bc7.png",
     "static/media/S6.png": "/static/media/S6.ee521796a12b2c520086.png",
     "static/media/S2.png": "/static/media/S2.c8b6738332fb4d4631b8.png",
+    "static/media/OP1.png": "/static/media/OP1.914e9a204a956e4eb759.png",
     "static/media/Equip6.png": "/static/media/Equip6.70a1cb89e4bdb4a6faef.png",
     "static/media/Equip5.png": "/static/media/Equip5.c6dda5a19843bfb1062e.png",
     "static/media/Map.png": "/static/media/Map.ed2509cdb03292b47a31.png",
@@ -29,12 +32,12 @@
     "static/media/P3.png": "/static/media/P3.859d8988a3f663bac5b3.png",
     "static/media/Equip2.png": "/static/media/Equip2.67960484b1e59c2c4be2.png",
     "static/media/P9.jpg": "/static/media/P9.47110ca8c29fdb8db7bc.jpg",
-    "static/media/P5.png": "/static/media/P5.e2e4e8c58832997bd70f.png",
-    "static/media/P8.jpg": "/static/media/P8.6657da984796427c0faf.jpg",
-    "static/media/P10.jpg": "/static/media/P10.df5843e10af007a40662.jpg",
     "static/media/P2.jpg": "/static/media/P2.ec793ee7d33d3094295c.jpg",
     "static/media/Rakesh Kohli.png": "/static/media/Rakesh Kohli.be1216201525f4428afe.png",
     "static/media/P1.png": "/static/media/P1.6f5e77022839d89a03ab.png",
+    "static/media/P10.jpg": "/static/media/P10.d8d5862eff3927c3d753.jpg",
+    "static/media/P8.jpg": "/static/media/P8.92f092a8e79b9d2b6c35.jpg",
+    "static/media/P5.jpg": "/static/media/P5.2a8a9e1baabeb4e11b1d.jpg",
     "static/media/Jhamat Hasseja.png": "/static/media/Jhamat Hasseja.f7dd60f879b3291cf42a.png",
     "static/media/Navin Vazirani.png": "/static/media/Navin Vazirani.e4474a038f7c967cdcfe.png",
     "static/media/Rajesh Sharma.png": "/static/media/Rajesh Sharma.f7e1fb593d3f5b86873d.png",
@@ -42,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.85cbf5ff.css",
-    "static/js/main.917ce448.js"
+    "static/js/main.95c63626.js"
   ]
 }
