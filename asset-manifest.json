@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.85cbf5ff.css",
-    "main.js": "/static/js/main.95c63626.js",
+    "main.js": "/static/js/main.b6d3c9f1.js",
     "static/media/S5.png": "/static/media/S5.c46c3199cdfaae44fe4b.png",
     "static/media/Hero.jpeg": "/static/media/Hero.8fb6188fac132e5c920a.jpeg",
     "static/media/About.png": "/static/media/About.59b96f6f91ee18a6c998.png",
     "static/media/P6.png": "/static/media/P6.fc31fb4ab90a5b79e75f.png",
+    "static/media/Rakesh Kohli.png": "/static/media/Rakesh Kohli.4856cf196ca5fa4702f8.png",
     "static/media/C4.png": "/static/media/C4.b3a9a0abed0544cb9d94.png",
     "static/media/S3.png": "/static/media/S3.a894cc82dc758ddb6c48.png",
     "static/media/C1.png": "/static/media/C1.7588010750785a4538d4.png",
@@ -31,20 +32,21 @@
     "static/media/S1.png": "/static/media/S1.f53bcf3e5196f49daa46.png",
     "static/media/P3.png": "/static/media/P3.859d8988a3f663bac5b3.png",
     "static/media/Equip2.png": "/static/media/Equip2.67960484b1e59c2c4be2.png",
+    "static/media/Navin Vazirani.png": "/static/media/Navin Vazirani.39041ec91de3f95d7226.png",
     "static/media/P9.jpg": "/static/media/P9.47110ca8c29fdb8db7bc.jpg",
+    "static/media/CP1.jpg": "/static/media/CP1.73f0e2244cd7498a9382.jpg",
     "static/media/P2.jpg": "/static/media/P2.ec793ee7d33d3094295c.jpg",
-    "static/media/Rakesh Kohli.png": "/static/media/Rakesh Kohli.be1216201525f4428afe.png",
+    "static/media/Avinash Jaisinghnaii.png": "/static/media/Avinash Jaisinghnaii.0c880c14834edbbea79e.png",
+    "static/media/P8.jpg": "/static/media/P8.c2384e3291506f82ab8b.jpg",
     "static/media/P1.png": "/static/media/P1.6f5e77022839d89a03ab.png",
     "static/media/P10.jpg": "/static/media/P10.d8d5862eff3927c3d753.jpg",
-    "static/media/P8.jpg": "/static/media/P8.92f092a8e79b9d2b6c35.jpg",
     "static/media/P5.jpg": "/static/media/P5.2a8a9e1baabeb4e11b1d.jpg",
     "static/media/Jhamat Hasseja.png": "/static/media/Jhamat Hasseja.f7dd60f879b3291cf42a.png",
-    "static/media/Navin Vazirani.png": "/static/media/Navin Vazirani.e4474a038f7c967cdcfe.png",
     "static/media/Rajesh Sharma.png": "/static/media/Rajesh Sharma.f7e1fb593d3f5b86873d.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.85cbf5ff.css",
-    "static/js/main.95c63626.js"
+    "static/js/main.b6d3c9f1.js"
   ]
 }
