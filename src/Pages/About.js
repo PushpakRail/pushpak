@@ -10,6 +10,7 @@ import Rakesh from "../Images/Rakesh Kohli.png";
 import Navin from "../Images/Navin Vazirani.png";
 import Jhamat from "../Images/Jhamat Hasseja.png";
 import Rajesh from "../Images/Rajesh Sharma.png";
+import Avinash from "../Images/Avinash Jaisinghnaii.png";
 
 const AboutSec = styled.section`
   padding: 0 20px;
@@ -175,6 +176,7 @@ function About() {
           <Photos img={Navin} no="Director" name="Navin Vazirani" height />
           <Photos img={Rakesh} no="Director" name="Rakesh Kohli" height />
           <Photos img={Rajesh} no="Director" name="Rajesh Sharma" height />
+          <Photos img={Avinash} no="Management" name="Avinash Jaisinghnai" height />
         </PhotosDiv>
       </PhotoSec>
 

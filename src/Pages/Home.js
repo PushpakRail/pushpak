@@ -7,22 +7,13 @@ import NavBar from "../Components/NavBar";
 import Photos from "../Components/Photos";
 import ImagePopup from "../Components/ImagePopup";
 import Contact from "../Components/ContactUs";
-import Hero from "../Images/Hero.jpeg";
-import Search from "../Images/Search.png";
+// import Hero from "../Images/Hero.jpeg";
+// import Search from "../Images/Search.png";
 import C1 from "../Images/C1.png";
 import C2 from "../Images/C2.png";
 import C3 from "../Images/C3.png";
 import C4 from "../Images/C4.png";
-import P1 from "../Images/P1.png";
-import P2 from "../Images/P2.jpg";
-import P3 from "../Images/P3.png";
-import P4 from "../Images/P4.jpg";
-import P5 from "../Images/P5.png";
-import P6 from "../Images/P6.png";
-import P7 from "../Images/P7.png";
-import P8 from "../Images/P8.jpg";
-import P9 from "../Images/P9.jpg";
-import P10 from "../Images/P10.jpg";
+
 import S1 from "../Images/S1.png";
 import S2 from "../Images/S2.png";
 import S3 from "../Images/S3.png";
@@ -86,13 +77,13 @@ const ServicesDiv = styled.div`
 `;
 
 const Service = styled.div`
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: flex-start;
-  margin: 0 0 40px;
+  align-items: flex-start; */
+  margin: 0 0 50px;
   position: relative;
 
-  &:after {
+  /* &:after {
     visibility: ${(props) =>
       props.line || props.mobile ? "visible" : "hidden"};
     content: "";
@@ -104,24 +95,27 @@ const Service = styled.div`
     height: calc(100% - 35px);
     @media ${(props) => props.theme.MediaQueries.l.query} {
       visibility: ${(props) => (props.line ? "visible" : "hidden")};
+      left: 30px;
     }
-  }
+  } */
 `;
 
 const Icon = styled.img`
   border: 1px solid #000;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   padding: 7.5px;
-  height: 55px;
+  height: 110px;
   aspect-ratio: 1/1;
-  margin-right: 20px;
+  margin: 0 20px 0 0;
+  float: left;
   cursor: pointer;
   @media ${(props) => props.theme.MediaQueries.l.query} {
-    height: 60px;
+    height: 120px;
   }
 `;
 
-const ServiceDetail = styled.div``;
+const ServiceDetail = styled.div`
+`;
 
 const ServiceName = styled.h1`
   color: #000;
@@ -178,6 +172,7 @@ const Home = () => {
         showIndicators={false}
         interval={3000}
         animationHandler="fade"
+        swipeable={false}
       >
         <HeroSecOld
           info={"Construction of Olympic Size Swimming Pool"}
@@ -339,29 +334,33 @@ const Home = () => {
           </ServicesDiv>
         </ParentDiv>
       </Services>
-      <Projects>
+      {/* <Projects>
         <HeadingDiv>Providing Solutions Start to End</HeadingDiv>
         <PhotoGallery>
-          <Photos img={P1} no="1" name="Thane multi story parking" />
-          <Photos img={P2} no="2" name="Lifts & Escalators" />
-          <Photos img={P3} no="3" name="Steel Girder" />
+          <Photos img={P1} no="1" name="Thane Multi Story Parking" />
+          <Photos img={P2} no="2" name="Lifts & Escalators at Mumbai" />
+          <Photos img={P3} no="3" name="Steel Girder Bridge" />
           <Photos img={P4} no="4" name="Micro Tunneling Boring Machine" />
-          <Photos img={P5} no="5" name="Kalyan - Igatpuri" />
-          <Photos img={P6} no="6" name="Chambal bridge" />
-          <Photos img={P7} no="7" name="Amalner" />
+          <Photos img={P5} no="5" name="Kalyan Igatpuri Bridge Construction" />
+          <Photos img={P6} no="6" name="Chambal bridge, Dholpur" />
+          <Photos
+            img={P7}
+            no="7"
+            name="Inhouse Steel Gider Factrication Workshop"
+          />
           <Photos
             img={P8}
             no="8"
             name="PIT  Line at Railway Mechanical Workshop"
           />
-          <Photos img={P9} no="9" name="Arch Bridge Rehabilitation" />
+          <Photos img={P9} no="9" name="Arch Bridge Rehabilitation Railway" />
           <Photos
             img={P10}
             no="10"
-            name="Bridge construction by Box pushing Technick"
+            name="Bridge construction by Box pushing Technick Under Railway Line"
           />
         </PhotoGallery>
-      </Projects>
+      </Projects> */}
       <Contact />
     </>
   );

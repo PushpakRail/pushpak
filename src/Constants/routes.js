@@ -1,3 +1,5 @@
 export const HOMEPAGE = "/"
 export const ABOUTPAGE = "/about"
 export const OUTLETPAGE = "/outlet"
+export const ONGOING = "/project/ongoing"
+export const COMPLETED = "/project/completed"

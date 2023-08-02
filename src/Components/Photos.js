@@ -15,6 +15,7 @@ const Images = styled.img`
   border-radius: 10px;
   margin: 10px 10px 5px 0;
   max-height: 90vh;
+  object-fit: cover;
 `;
 
 const PhotoInfo = styled.div`
@@ -54,7 +55,7 @@ const PhotoNo = styled.p`
 
 const PhotoName = styled.p`
   color: #000;
-  font-size: 18px;
+  font-size: ${(props) => (props.height ? "17px" : "18px")};
   font-weight: 700;
   max-width: 260px;
   max-height: 43px;
@@ -79,7 +80,7 @@ const Photos = ({ img, no, name, height }) => {
       <Images src={img} height={height} />
       <PhotoInfo>
         <PhotoNo>{height ? no : `Project ${no}`}</PhotoNo>
-        <PhotoName>{name}</PhotoName>
+        <PhotoName height>{name}</PhotoName>
       </PhotoInfo>
     </PhotosDiv>
   );

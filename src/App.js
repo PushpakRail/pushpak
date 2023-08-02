@@ -8,6 +8,8 @@ import { ThemeProvider } from "styled-components";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Outlet from "./Pages/Outlet";
+import Project from "./Pages/Project"
+import Completed from "./Pages/Completed"
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
             <Route path={ROUTES.HOMEPAGE} element={<Home />} />
             <Route path={ROUTES.ABOUTPAGE} element={<About />} />
             <Route path={ROUTES.OUTLETPAGE} element={<Outlet />} />
+            <Route path={ROUTES.ONGOING} element={<Project />} />
+            <Route path={ROUTES.COMPLETED} element={<Completed />} />
           </Routes>
         </Suspense>
       </ThemeProvider>
