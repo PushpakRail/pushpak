@@ -85,7 +85,7 @@ const Service = styled.div`
 
   /* &:after {
     visibility: ${(props) =>
-      props.line || props.mobile ? "visible" : "hidden"};
+    props.line || props.mobile ? "visible" : "hidden"};
     content: "";
     position: absolute;
     top: 65px;
@@ -114,8 +114,7 @@ const Icon = styled.img`
   }
 `;
 
-const ServiceDetail = styled.div`
-`;
+const ServiceDetail = styled.div``;
 
 const ServiceName = styled.h1`
   color: #000;
@@ -170,10 +169,11 @@ const Home = () => {
         showThumbs={false}
         showStatus={false}
         showIndicators={false}
-        interval={3000}
+        interval={5000}
         animationHandler="fade"
         swipeable={false}
       >
+        <HeroSecOld info={"Affiliated Fabrication Workshop"} img={C3} />
         <HeroSecOld
           info={"Construction of Olympic Size Swimming Pool"}
           img={C1}
@@ -182,7 +182,6 @@ const Home = () => {
           info={"Fledged Micro Tunneling Machines and Expertise"}
           img={C2}
         />
-        <HeroSecOld info={"Affiliated Fabrication Workshop"} img={C3} />
         <HeroSecNew />
         <HeroSecOld info={"Pre Fabricated Villas"} img={C4} />
       </Carousel>
