@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.85cbf5ff.css",
-    "main.js": "/static/js/main.b6d3c9f1.js",
+    "main.js": "/static/js/main.b44f36e2.js",
     "static/media/S5.png": "/static/media/S5.c46c3199cdfaae44fe4b.png",
     "static/media/Hero.jpeg": "/static/media/Hero.8fb6188fac132e5c920a.jpeg",
     "static/media/About.png": "/static/media/About.59b96f6f91ee18a6c998.png",
@@ -36,8 +36,8 @@
     "static/media/P9.jpg": "/static/media/P9.47110ca8c29fdb8db7bc.jpg",
     "static/media/CP1.jpg": "/static/media/CP1.73f0e2244cd7498a9382.jpg",
     "static/media/P2.jpg": "/static/media/P2.ec793ee7d33d3094295c.jpg",
-    "static/media/Avinash Jaisinghnaii.png": "/static/media/Avinash Jaisinghnaii.0c880c14834edbbea79e.png",
     "static/media/P8.jpg": "/static/media/P8.c2384e3291506f82ab8b.jpg",
+    "static/media/Avinash Jaisinghnaii.png": "/static/media/Avinash Jaisinghnaii.b6f12d8c7922b64a2031.png",
     "static/media/P1.png": "/static/media/P1.6f5e77022839d89a03ab.png",
     "static/media/P10.jpg": "/static/media/P10.d8d5862eff3927c3d753.jpg",
     "static/media/P5.jpg": "/static/media/P5.2a8a9e1baabeb4e11b1d.jpg",
@@ -47,6 +47,6 @@
   },
   "entrypoints": [
     "static/css/main.85cbf5ff.css",
-    "static/js/main.b6d3c9f1.js"
+    "static/js/main.b44f36e2.js"
   ]
 }
