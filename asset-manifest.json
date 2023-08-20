@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.85cbf5ff.css",
-    "main.js": "/static/js/main.b44f36e2.js",
+    "main.js": "/static/js/main.364eaf85.js",
     "static/media/S5.png": "/static/media/S5.c46c3199cdfaae44fe4b.png",
     "static/media/Hero.jpeg": "/static/media/Hero.8fb6188fac132e5c920a.jpeg",
     "static/media/About.png": "/static/media/About.59b96f6f91ee18a6c998.png",
@@ -10,7 +10,9 @@
     "static/media/C4.png": "/static/media/C4.b3a9a0abed0544cb9d94.png",
     "static/media/S3.png": "/static/media/S3.a894cc82dc758ddb6c48.png",
     "static/media/C1.png": "/static/media/C1.7588010750785a4538d4.png",
+    "static/media/PO6.png": "/static/media/PO6.134fbfb69fb247916daa.png",
     "static/media/C3.png": "/static/media/C3.ccc1ea62bc58ae141634.png",
+    "static/media/PO7.png": "/static/media/PO7.6b9d3d3dc62c912b2539.png",
     "static/media/Equip4.png": "/static/media/Equip4.df64b44d559dbc0e5043.png",
     "static/media/ContactBg.png": "/static/media/ContactBg.9312d9640ae1a5902fbc.png",
     "static/media/Back.png": "/static/media/Back.9f71423ca1e57ac9ddc5.png",
@@ -30,6 +32,7 @@
     "static/media/Equip1.png": "/static/media/Equip1.51f2d493d7f5671bc009.png",
     "static/media/P4.jpg": "/static/media/P4.675f60b155709d4f5292.jpg",
     "static/media/S1.png": "/static/media/S1.f53bcf3e5196f49daa46.png",
+    "static/media/Prakash Hasseja.png": "/static/media/Prakash Hasseja.fbcd346e640c95d1556e.png",
     "static/media/P3.png": "/static/media/P3.859d8988a3f663bac5b3.png",
     "static/media/Equip2.png": "/static/media/Equip2.67960484b1e59c2c4be2.png",
     "static/media/Navin Vazirani.png": "/static/media/Navin Vazirani.39041ec91de3f95d7226.png",
@@ -47,6 +50,6 @@
   },
   "entrypoints": [
     "static/css/main.85cbf5ff.css",
-    "static/js/main.b44f36e2.js"
+    "static/js/main.364eaf85.js"
   ]
 }
