@@ -6,6 +6,8 @@ import Card from "../Components/Card";
 import Hero from "../Images/Hero.jpeg";
 import P4 from "../Images/P4.jpg";
 import P7 from "../Images/P7.png";
+import PO6 from "../Images/PO6.png";
+import PO7 from "../Images/PO7.png";
 import OP1 from "../Images/OP1.png";
 import OP2 from "../Images/OP2.png";
 import OP3 from "../Images/OP3.png";
@@ -65,17 +67,17 @@ export const Project = () => {
           <Card
             image={OP1}
             title="Project No. 1"
-            para="Proposed additional opening of bridge and Augmentation of water way of Culvert "
+            para="Microtunneling project at Talegaon, Pune "
           />
           <Card
             image={OP2}
             title="Project No. 2"
-            para="Providing and laying of 1800mm dia. SWD on 90 feet road Dharavi  "
+            para="Providing and laying of 1800mm dia. SWD on 90 feet road Dharavi, Mumbai "
           />
           <Card
             image={OP3}
             title="Project No. 3"
-            para="Associated civil works for provision of 10 single and 4 double escalator at various stations"
+            para="Provision of lift from Vithalwadi to Karja Stations Mumbai Division, Central Railway"
           />
           <Card
             image={P4}
@@ -86,7 +88,15 @@ export const Project = () => {
             image={P7}
             title="Project No. 5"
             para="Providing additional FOB with ramp at Amalner station to ease out inter-platform movement of passenger"
-          />
+          /><Card
+          image={PO6}
+          title="Project No. 6"
+          para="Revived Matheran Railway line post washout with retaining walls and galions for track stabiliy"
+        /><Card
+        image={PO7}
+        title="Project No. 7"
+        para="Augmenting Mumbai LTT station with extra platforms, enhancing capacity and efficiency"
+      />
         </CardDiv>
       </Cardec>
 

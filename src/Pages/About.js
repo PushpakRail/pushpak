@@ -11,6 +11,7 @@ import Navin from "../Images/Navin Vazirani.png";
 import Jhamat from "../Images/Jhamat Hasseja.png";
 import Rajesh from "../Images/Rajesh Sharma.png";
 import Avinash from "../Images/Avinash Jaisinghnaii.png";
+import Prakash from "../Images/Prakash Hasseja.png";
 import Team from "./../Components/Team";
 
 const AboutSec = styled.section`
@@ -189,7 +190,12 @@ function About() {
             no="Director"
             name="Navin Vazirani"
             desc="Navin Vazirani, a seasoned professional with 15 years of contractor experience, holds a distinguished role as Director at Pushpak Rail Construction Private Limited. His expertise, honed in the intricate domain of bridge construction, has left an indelible mark on the industry. With a passion for innovation and an unwavering commitment to excellence, Navin Vazirani's leadership has propelled him to the forefront of rail infrastructure development. His invaluable contributions continue to reshape the landscape of bridge construction, inspiring peers and emerging professionals alike."
-          />
+          /><Team
+          img={Prakash}
+          no="Director"
+          name="Prakash Hasseja"
+          desc="Prakash Hasseja, a distinguished Director at Pushpak Rail Construction Private Limited, whose expertise extends far beyond the rails. With a decade of experience in crafting swimming pools of every scale, from private havens to Olympic-sized marvels, Prakash has established himself as a visionary in aquatic architecture. His innovative approach, honed over years of practice, has transformed the landscape of leisure and sports facilities. Prakash Hasseja's commitment to excellence and versatility continues to elevate both the art and science of swimming pool design, leaving an indelible mark on the industry."
+        />
           <Team
             img={Rakesh}
             no="Director"

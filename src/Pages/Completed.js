@@ -69,19 +69,19 @@ export const Completed = () => {
           <Card
             image={P1}
             title="Project No. 1"
-            para="Thane Multi Story Parking"
+            para="Thane Multi Story Parking Mumbai Division; Thane Railway station"
           />
           <Card
             image={P2}
             title="Project No. 2"
-            para="Lifts & Escalators at Mumbai"
+            para="Lifts & Escalators at various stations in Mumbai Division"
           />
-          <Card image={P3} title="Project No. 3" para="Steel Girder Bridge" />
+          <Card image={P3} title="Project No. 3" para="Steel Girder Bridge at Palasdhai Station" />
 
           <Card
             image={P5}
             title="Project No. 4"
-            para="Foot Over Bridge Near Rosary School,Mumbai for Munciple Corporation of Greater Mumbai"
+            para="Foot Over Bridge Near Rosary School, Mumbai for Munciple Corporation of Greater Mumbai"
           />
           <Card
             image={P8}
